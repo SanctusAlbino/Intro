@@ -1,0 +1,50 @@
+/* 스타일리시트 주석문 기호 */ 
+/* 1. 전체/공용 선택자(universal selector) */
+.myClass {
+    color:rgb(178, 217, 36);
+}
+.naver li {
+    display: inline-block;
+}
+/* 2. 태그 선택자(tag selector) : 1개가 아닌 모두~ */
+p {
+    background-color: yellowgreen;
+    color: white;
+}
+
+/* 3. 클래스 선택자(class selector) : 여러번 반복, 재사용*/
+.myClass {
+    padding: 15px 20px;
+    border: 1px solid blue;
+}
+
+/* 4. 아이디 선택자(id selector) : 문서 내에서 한번만 사용*/
+body {
+    background-color: white;
+}
+#wrap {
+    background-color: white;
+    border: 1px dotted ;
+    padding: 10px 20px;
+    margin: 50px 100px;
+}
+/* 5. 그룹 선택자(group selector)*/
+h1, .border {
+    border-width: 3px;    /*선-두께*/
+    border-style: solid; /*선-종류*/
+    margin: 15px;         /*바깥 여백*/
+}
+
+
+/*========================================미디어 쿼리========================*/
+/* 미디어 종류 : all, print, screen, speech.... 그밖의 장치는 검색! */
+@media screen and (max-width: 768px) {
+    body {
+        background-color:aqua;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        background-color:rgb(104, 252, 146);
+    }
+}
